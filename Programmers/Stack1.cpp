@@ -53,8 +53,8 @@ int main(void)
 	vector<int> s = { 1, 30, 5 };
 	vector<int> a;
 	a =  solution(p, s);
-	for (int i = 0; i < a.size(); i++)
-	{
-		printf(a.pop_back);
-	}
+//	for (int i = 0; i < a.size(); i++)
+//	{
+//		printf(a.pop_back);
+//	}
 }
