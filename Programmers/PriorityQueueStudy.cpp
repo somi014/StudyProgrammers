@@ -43,11 +43,11 @@ int main()
 	}
 
 	priority_queue<Student, vector<Student>, cmp> pq2;
-	pq2.push(Student(2, "나"));
-	pq2.push(Student(5, "마"));
-	pq2.push(Student(3, "다"));
-	pq2.push(Student(1, "가"));
-	pq2.push(Student(4, "라"));
+	pq2.push(Student(2, "A"));
+	pq2.push(Student(5, "B"));
+	pq2.push(Student(3, "C"));
+	pq2.push(Student(1, "D"));
+	pq2.push(Student(4, "E"));
 
 	while (pq2.size()> 0)
 	{
