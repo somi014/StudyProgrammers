@@ -6,8 +6,7 @@
 using namespace std;
 
 vector<int> check(8, 0);
-vector<int> countList;
-void dfs(int k, vector<vector<int>> dungeons, int index, int count, int& answer)
+void dfs(int k, vector<vector<int>> dungeons, int count, int& answer)
 {
 	if (count > answer)
 	{
@@ -19,7 +18,7 @@ void dfs(int k, vector<vector<int>> dungeons, int index, int count, int& answer)
 		if (check[i] == 0 && dungeons[i][0] <= k)
 		{
 			check[i] = 1;
-			dfs(k - dungeons[i][1], dungeons, index + 1, count + 1, answer);
+			dfs(k - dungeons[i][1], dungeons, count + 1, answer);
 			check[i] = 0;
 		}
 	}
@@ -28,14 +27,8 @@ void dfs(int k, vector<vector<int>> dungeons, int index, int count, int& answer)
 int solution(int k, vector<vector<int>> dungeons) {
 	int answer = -1;
 
-	dfs(k, dungeons, 0, 0, answer);
+	dfs(k, dungeons, 0, answer);
 
-	//sort(countList.rbegin(), countList.rend());
-	//answer = countList[0];
-	//for (int i = 0; i < countList.size(); ++i) {
-	//	cout << "i : " << countList[i] << endl;
-	//}
-	cout << answer << endl;
 	return answer;
 }
 
