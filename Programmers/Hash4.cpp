@@ -24,16 +24,7 @@ int solution(vector<int> nums)
 		}
 	}
 
-	//if (nums.size() / 2 > type.size())
-	//{
-	//	answer = nums.size() / 2;
-	//	cout << "answer0  : " << answer << endl;
-	//}
-	//else
-	//{
-	//	answer = type.size();
-	//}
-		cout << "answer1  : " << answer << endl;
+	cout << "answer1  : " << answer << endl;
 
 	return answer;
 }
