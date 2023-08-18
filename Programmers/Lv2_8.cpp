@@ -1,4 +1,4 @@
-#include <string>
+ï»¿#include <string>
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -31,7 +31,7 @@ int solution(vector<int> arr) {
     int result = 0;
     for (int i = 1; i < arr.size(); i++)
     {        
-        result = lcm(start, arr[i]);            //µÎ¼öÀÇ ÃÖ¼Ò °ø¹è¼ö¿Í ´ÙÀ½ ¼ö¿Í ºñ±³
+        result = lcm(start, arr[i]);            //ë‘ìˆ˜ì˜ ìµœì†Œ ê³µë°°ìˆ˜ì™€ ë‹¤ìŒ ìˆ˜ì™€ ë¹„êµ
         start = result;
     }
 
